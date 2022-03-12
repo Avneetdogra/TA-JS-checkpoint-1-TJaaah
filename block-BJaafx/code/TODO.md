@@ -1,72 +1,31 @@
-1. Using loops take 10 inputs from user and find the average of all the numbers.
+1.Using loops take 10 inputs from user and find the average of all the numbers. let number=10 sum=0 for (let i=1; i<=number; i++){ sum+=i } let avg = sum / number console.log(avg);
 
-2. What will be the output of the code below
+What will be the output of the code below let i = 0; while (i < 3) { println('hi'); i++;
 
-```js
-let i = 0;
-while (i < 3) {
-  println('hi');
-  i++;
-}
-```
+}//error printIn is not defined Write a function named getEvenSum that accepts a parameter max. Return the sum of all even numbers. The value of max should default to 10. function getEvenSum(max=10){ sum=0; for(let i=0; i<=max; i++){ if(i%2==0 ) sum+=i } return sum } Write a function named getOddSum that accepts a parameter max. Return the sum of all odd numbers. The value of max should default to 10. function getOddSum(max=10){
 
-3. Write a function named `getEvenSum` that accepts a parameter `max`. Return the sum of all even numbers. The value of max should default to 10.
+sum=0; for(let i=0; i<=max; i++){ if(i%2 !==0 ) sum+=i } return sum } getOddSum(); Write a function named getProductOfDigits that accepts a parameter num. It returns the product of all the digits in the number. If the input value is less than 0 return not a valid input For example if the input is 123 output should be 6. function getProductOfDigits (num){
 
-4. Write a function named `getOddSum` that accepts a parameter `max`. Return the sum of all odd numbers. The value of max should default to 10.
-
-5. Write a function named `getProductOfDigits` that accepts a parameter `num`. It returns the product of all the digits in the number.
-
-- If the input value is less than 0 return `not a valid input`
-- For example if the input is `123` output should be `6`.
-
-6. What will be the output of the following code below in multiple conditions? Explain with reason?
-
-```js
-function check(num) {
-  if (num > 5) {
-    return 'Bigger than 5';
+if(num>0){
+  return `not a valid input`
+  }else  {
+    return num
   }
+} What will be the output of the following code below in multiple conditions? Explain with reason? function check(num) { if (num > 5) { return 'Bigger than 5'; }
 
-  if (num < 5) {
-    return 'Smaller than 5';
-  }
+if (num < 5) { return 'Smaller than 5'; }
 
-  return num;
-}
+return num; }
 
-check(10); // output
-check(1); // output
-check(5); // output
-```
+check(10); // 'Bigger than 5 check(1); // 'Smaller than 5' check(5); // 5 What will be the output of the following code given below? Explain the reason? function getOutput(name) { if (name === 'Arya') return 'You are arya'; if (name === 'John') return 'You are john'; return 'Who are you'; }
 
-7. What will be the output of the following code given below? Explain the reason?
+getOutput('Arya'); // 'You are arya' getOutput('John'); // return 'You are john' getOutput(); // return 'Who are you' What will be the output of the following code given below? Explain the reason? function getOutput(name) { if (name === 'Arya') console.log('You are arya'); if (name === 'John') console.log('You are john'); return 'Who are you'; }
 
-```js
-function getOutput(name) {
-  if (name === 'Arya') return 'You are arya';
-  if (name === 'John') return 'You are john';
-  return 'Who are you';
-}
+getOutput('Arya'); // You are arya getOutput('John'); // You are john getOutput(); // 'Who are you' Can a function have multiple return statement? Give one example if possible and explain the reason.
 
-getOutput('Arya'); // what will be the output
-getOutput('John'); // what will be the output
-getOutput(); // what will be the output
-```
+What is the difference between for loop and while loop. What are the different place you can use them? Explain with example.
 
-8. What will be the output of the following code given below? Explain the reason?
+I would use a for loop for the reason that I may KNOW the NUMBER OF ITERATIONS I need to do and I have an INCREMENTING variable which can be handy sometimes.
 
-```js
-function getOutput(name) {
-  if (name === 'Arya') console.log('You are arya');
-  if (name === 'John') console.log('You are john');
-  return 'Who are you';
-}
+I would use this loop when I am NOT SURE how many ITERATIONS I might need to carry out.
 
-getOutput('Arya'); // what will be the output
-getOutput('John'); // what will be the output
-getOutput(); // what will be the output
-```
-
-9. Can a function have multiple return statement? Give one example if possible and explain the reason.
-
-10. What is the difference between `for` loop and `while` loop. What are the different place you can use them? Explain with example.
